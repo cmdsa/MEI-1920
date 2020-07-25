@@ -1,0 +1,2 @@
+V	201217232128Z		1000	unknown	/C=PT/ST=Braga/L=Braga/O=UMinho/OU=UMinho CA/CN=Cliente
+V	201217232702Z		1001	unknown	/C=PT/ST=Braga/O=UMinho/OU=UMinho CA/CN=servidor

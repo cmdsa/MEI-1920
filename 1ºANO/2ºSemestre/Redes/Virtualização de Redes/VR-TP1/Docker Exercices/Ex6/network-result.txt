@@ -1,0 +1,49 @@
+[
+    {
+        "Name": "tp1_shared_network",
+        "Id": "c11727dfb883f5cd3b7b806befc93276ecfa6cef8f8626b57711b7d0fa78c3e3",
+        "Created": "2020-02-20T13:33:57.468250063Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "172.18.0.0/16",
+                    "Gateway": "172.18.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": true,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "e5ccf419e37b10d21dc37ea1ae2f68736d98e54a97f52b62d6749578d9c6ec2d": {
+                "Name": "Httpd",
+                "EndpointID": "52d0dd618b5d5ba8c87c018f31e094c762c217566051aa582961ce3efcfbfa2f",
+                "MacAddress": "02:42:ac:12:00:02",
+                "IPv4Address": "172.18.0.2/16",
+                "IPv6Address": ""
+            },
+            "e88c4e5afb7cb34bdc8ad2aba89f39637c415b2f8de9319c49b4d7422cdbdc7b": {
+                "Name": "Mongo",
+                "EndpointID": "2efd286f973bec3df8c35cec187d0ffac3bccc758abb41a02b305bd39c60c789",
+                "MacAddress": "02:42:ac:12:00:03",
+                "IPv4Address": "172.18.0.3/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {
+            "com.docker.compose.network": "shared_network",
+            "com.docker.compose.project": "tp1",
+            "com.docker.compose.version": "1.25.3"
+        }
+    }
+]

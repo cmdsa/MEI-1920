@@ -1,0 +1,1 @@
+V	291205225008Z		1000	unknown	/C=PT/ST=Braga/O=UMinho/OU=Uminho CA/CN=UMinho Intermediate CA
