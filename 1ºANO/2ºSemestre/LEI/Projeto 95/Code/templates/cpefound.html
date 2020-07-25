@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="static/style.css">
+ 
+    </head>
+    <body>
+        <br/><br/>
+        <table>
+            <caption><h1>Resultados</h1></caption>
+            <thead><tr><th>{{ headers[0] }}</th><th>{{ headers[1] }}</th></tr></thead>
+            <tbody>
+            {% for values in rows%}
+               <tr>
+                <tr><td>{{ values[0] }}</td><td><a href="/item/{{ values[1] }}" >{{ values[1] }}</a></td></tr>
+      
+               </tr>
+            {% endfor %}
+        </tbody>
+            </table>
+
+    </body>
+</html>

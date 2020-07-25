@@ -1,0 +1,5 @@
+# LEIUbuntu
+
+pip install flask
+
+
