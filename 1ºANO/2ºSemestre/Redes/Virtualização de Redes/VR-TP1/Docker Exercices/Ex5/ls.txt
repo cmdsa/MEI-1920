@@ -1,7 +1,0 @@
-NETWORK ID          NAME                 DRIVER              SCOPE
-9f706cf8e774        bridge               bridge              local
-900eae28a8e1        ex5_container-net    bridge              local
-c5df64cf7107        host                 host                local
-7649309ee76e        my-network-1         bridge              local
-394720655c98        none                 null                local
-c11727dfb883        tp1_shared_network   bridge              local

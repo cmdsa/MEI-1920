@@ -1,3 +1,0 @@
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                               NAMES
-e88c4e5afb7c        mongo               "docker-entrypoint.s…"   7 minutes ago       Up 7 minutes        27017/tcp, 0.0.0.0:8888->9999/tcp   Mongo
-e5ccf419e37b        httpd               "httpd-foreground"       7 minutes ago       Up 7 minutes        80/tcp                              Httpd
