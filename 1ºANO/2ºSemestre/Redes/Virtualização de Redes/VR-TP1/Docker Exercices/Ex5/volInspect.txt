@@ -1,0 +1,15 @@
+[
+    {
+        "CreatedAt": "2020-03-01T02:48:44Z",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.project": "ex5",
+            "com.docker.compose.version": "1.25.3",
+            "com.docker.compose.volume": "httpd-vol"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/ex5_httpd-vol/_data",
+        "Name": "ex5_httpd-vol",
+        "Options": null,
+        "Scope": "local"
+    }
+]

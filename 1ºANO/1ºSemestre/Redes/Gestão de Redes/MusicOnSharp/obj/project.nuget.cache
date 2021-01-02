@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "TZp1jmAZWcAJod/ywfBK3aaY2Q4dywS/eQyPy8Z4laj2gU/ickMDW+FWu3QFAnvWJccnA1aYaAHoVUYr4IaWPA==",
+  "success": true,
+  "projectFilePath": "/home/bruno/MusicOnSharp/MusicOnSharp.csproj",
+  "expectedPackageFiles": [
+    "/home/bruno/.nuget/packages/howler.blazor/0.9.3/howler.blazor.0.9.3.nupkg.sha512",
+    "/home/bruno/.nuget/packages/lextm.sharpsnmplib/12.3.0/lextm.sharpsnmplib.12.3.0.nupkg.sha512",
+    "/home/bruno/.nuget/packages/microsoft.jsinterop/3.1.0/microsoft.jsinterop.3.1.0.nupkg.sha512",
+    "/home/bruno/.nuget/packages/taglibsharp/2.2.0/taglibsharp.2.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

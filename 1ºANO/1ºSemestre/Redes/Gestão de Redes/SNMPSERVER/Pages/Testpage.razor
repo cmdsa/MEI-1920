@@ -1,0 +1,123 @@
+﻿@page "/"
+
+@using Blazorise.Charts;
+@using Blazorise.Charts.Streaming;
+
+<h1>Processos SNMP</h1>
+
+<p>Processos que estão a correr e memória utilizada</p>
+ 
+<Row >
+    <EditForm Model="@ipPortForm" OnValidSubmit="@start">
+        <DataAnnotationsValidator />
+        <Microsoft.AspNetCore.Components.Forms.ValidationSummary />
+        <InputText @bind-Value="@ipPortForm.IpAdress" />
+        <InputNumber @bind-Value="@ipPortForm.portNumb" />
+        <!--<button @onclick="@(async () => await Draw())" type="submit">Submit</button>-->
+        <Button Color="Color.Primary" Type="ButtonType.Submit">Começar</Button>
+    </EditForm>
+</Row > 
+
+
+
+@if (indexprocess == null)
+{
+
+     
+}
+else{
+   
+    
+
+<Row >
+
+<Column style="height: 110vh;" class="overflow-auto" ColumnSize="ColumnSize.IsFull.OnDesktop.IsHalf.OnWidescreen">
+    <Card  Margin="Margin.Is4.OnY">
+        <CardBody>
+            <Table Striped="true" >
+        
+            <TableHeader TableHeader ThemeContrast="ThemeContrast.Dark">
+                <TableRow>
+                    <TableHeaderCell></TableHeaderCell>
+                    <TableHeaderCell>id Processo</TableHeaderCell>
+                    <TableHeaderCell>Nome</TableHeaderCell>
+                    <TableHeaderCell>Memoria usada</TableHeaderCell>
+                    <TableHeaderCell>CPU usado</TableHeaderCell>
+
+                </TableRow>
+            </TableHeader>
+            <TableBody>
+
+                    @for (int i = 0; i < indexprocess.Count; i++)
+                    {
+                        var local_i = i;
+                    <TableRow>
+                    <TableRowHeader><Button Color="Color.Primary" Clicked="@(() => @Edit(local_i))">Graph</Button></TableRowHeader>   
+                    <TableRowCell>@indexprocess[local_i].Data</TableRowCell>
+                    <TableRowCell>@processname[local_i].Data</TableRowCell>
+                    <TableRowCell>@processmemory[local_i].Data</TableRowCell>
+                    <TableRowCell>@processusage[local_i].Data</TableRowCell>
+                    </TableRow>
+                    }
+                
+            
+            </TableBody>
+        </Table>
+        </CardBody>
+    </Card>
+</Column>
+
+<Column ColumnSize="ColumnSize.IsFull.OnDesktop.IsHalf.OnWidescreen">
+    <Card Margin="Margin.Is4.OnY">
+            <Card Margin="Margin.Is4.OnY">
+            <CardHeader>
+                <CardTitle>Uso de Memória</CardTitle>
+            </CardHeader>
+            <CardBody>
+                <LineChart @ref="@memoryLineChart" TItem="LiveDataPoint" OptionsObject="@memoryLineChartOptions">
+                    <ChartStreaming TItem="LiveDataPoint"
+                                    Options="new ChartStreamingOptions { Delay = 2000, FrameRate = 15 }"
+                                    Refreshed="@OnMemoryUsageLineRefreshed" />
+                </LineChart>
+            </CardBody>
+        </Card>
+  
+            <Card Margin="Margin.Is4.OnY">
+            <CardHeader>
+                <CardTitle>Uso CPU</CardTitle>
+            </CardHeader>
+            <CardBody>
+                <LineChart @ref="@cpuLineChart" TItem="LiveDataPoint" OptionsObject="@cpuLineChartOptions">
+                    <ChartStreaming TItem="LiveDataPoint"
+                                    Options="new ChartStreamingOptions { Delay = 2000, FrameRate = 15 }"
+                                    Refreshed="@OnCPUUsageRefreshed" />
+                </LineChart>
+            </CardBody>
+        </Card>
+    </Card>
+</Column>
+</Row>
+
+<Row>
+<Column  ColumnSize="ColumnSize.IsFull.OnDesktop.IsHalf.OnWidescreen">
+ <Button Clicked="@(async () => await drawStart())"   Color="Color.Primary" Type="ButtonType.Submit">Processos ativos</Button>
+ <Card Margin="Margin.Is4.OnY">
+            <Card Margin="Margin.Is4.OnY">
+            <CardHeader>
+                <CardTitle>Processos Totais</CardTitle>
+            </CardHeader>
+            <CardBody>
+                <LineChart @ref="@totalChart" TItem="LiveDataPoint" OptionsObject="@TotalLineChartOptions">
+                    <ChartStreaming TItem="LiveDataPoint"
+                                    Options="new ChartStreamingOptions { Delay = 2000, FrameRate = 15 }"
+                                    Refreshed="@OnTotalRefresh" />
+                </LineChart>
+            </CardBody>
+        </Card>
+    </Card>
+</Column>
+</Row>
+
+}
+
+

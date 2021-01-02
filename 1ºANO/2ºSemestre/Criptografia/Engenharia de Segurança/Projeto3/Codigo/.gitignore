@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/engsegd
+engsegd.so
+engsegd.dylib
+engsegd.dll
+engsegd.a
+engsegd.lib
+engsegd-test-*
+*.exe
+*.o
+*.obj
+*.lst

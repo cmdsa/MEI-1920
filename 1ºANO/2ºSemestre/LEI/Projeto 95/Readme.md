@@ -1,0 +1,9 @@
+# LEIUbuntu
+
+pip install flask
+
+CONTRIBUIDORES
+
+BRUNO RODRIGUES  
+CARLOS ALVES  
+ROBERTO CACHADA

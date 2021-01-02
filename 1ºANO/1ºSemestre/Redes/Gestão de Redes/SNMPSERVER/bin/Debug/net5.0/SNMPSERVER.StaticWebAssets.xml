@@ -1,0 +1,7 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/Blazorise" Path="/home/bruno/.nuget/packages/blazorise/0.9.2.4/build/../staticwebassets/" />
+  <ContentRoot BasePath="_content/Blazorise.Bootstrap" Path="/home/bruno/.nuget/packages/blazorise.bootstrap/0.9.2.4/build/../staticwebassets/" />
+  <ContentRoot BasePath="_content/Blazorise.Charts" Path="/home/bruno/.nuget/packages/blazorise.charts/0.9.2.4/build/../staticwebassets/" />
+  <ContentRoot BasePath="_content/Blazorise.Charts.Streaming" Path="/home/bruno/.nuget/packages/blazorise.charts.streaming/0.9.2.4/build/../staticwebassets/" />
+  <ContentRoot BasePath="/" Path="/home/bruno/SNMPSERVER/obj/Debug/net5.0/scopedcss/bundle/" />
+</StaticWebAssets>

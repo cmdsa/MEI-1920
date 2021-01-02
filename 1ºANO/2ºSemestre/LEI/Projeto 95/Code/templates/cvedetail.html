@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/static/style.css">
+
+    </head>
+    <body>
+        <br/><br/>
+        <table>
+            <caption><h1>CVE</h1></caption>
+            <tbody>
+                {% for key,value in rowCVE.items()%}
+                <tr>
+                 <tr><td>{{ key }}:</td><td>{{ value }}</td></tr>
+       
+                </tr>
+             {% endfor %}
+            </tbody>
+        </table>
+
+        <table>
+            <caption><h1>CVSS2</h1></caption>
+            <tbody>
+                {% for key,value in rowCVSS2.items()%}
+                <tr>
+                <tr><td>{{ key }}:</td><td>{{ value }}</td></tr>
+   
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <table>
+            <caption><h1>CVSS3</h1></caption>
+            <tbody>
+                {% for key,value in rowCVSS3.items()%}
+                <tr>
+                <tr><td>{{ key }}:</td><td>{{ value }}</td></tr>
+   
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </body>
+</html>

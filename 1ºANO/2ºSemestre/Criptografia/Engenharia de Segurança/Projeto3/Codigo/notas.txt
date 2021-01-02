@@ -1,0 +1,5 @@
+precisa de :
+apt install libssl-dev
+dub package manager
+ldc compiler 
+dub run --compiler=ldc2 or dub build --compiler=ldc2

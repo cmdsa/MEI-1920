@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/bruno/MusicOnSharp/MusicOnSharp.csproj": {}
+  },
+  "projects": {
+    "/home/bruno/MusicOnSharp/MusicOnSharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/bruno/MusicOnSharp/MusicOnSharp.csproj",
+        "projectName": "MusicOnSharp",
+        "projectPath": "/home/bruno/MusicOnSharp/MusicOnSharp.csproj",
+        "packagesPath": "/home/bruno/.nuget/packages/",
+        "outputPath": "/home/bruno/MusicOnSharp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/bruno/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Howler.Blazor": {
+              "target": "Package",
+              "version": "[0.9.3, )"
+            },
+            "Lextm.SharpSnmpLib": {
+              "target": "Package",
+              "version": "[12.3.0, )"
+            },
+            "TagLibSharp": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

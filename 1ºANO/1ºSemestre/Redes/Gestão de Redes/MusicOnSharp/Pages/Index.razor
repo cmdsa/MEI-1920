@@ -1,0 +1,63 @@
+@page "/"
+@using Lextm.SharpSnmpLib
+
+@code
+{
+    bool hidden = true;
+     private static SnmpFunc snmpFunc = new SnmpFunc();
+     public  static List<Variable> musicindex; 
+    public  static List<Variable> musicname; 
+    public  static List<Variable> artistname; 
+    public  static List<Variable> genrename;
+    public  static List<Variable> formatname;
+
+    protected override void OnInitialized()
+    {   
+        musicindex = snmpFunc.BulkWalk("1.3.6.1.3.4.1.1");
+        musicname = snmpFunc.BulkWalk("1.3.6.1.3.4.1.2");
+        artistname = snmpFunc.BulkWalk("1.3.6.1.3.4.1.3");
+        genrename = snmpFunc.BulkWalk("1.3.6.1.3.4.1.4");
+        formatname = snmpFunc.BulkWalk("1.3.6.1.3.4.1.5");
+    }
+    
+}
+@if (musicindex == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+  <table class="table" style="width:400px">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Artista</th>
+                <th>Genero</th>
+                <th>Formato</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+           
+                
+                    @for (int i = 0; i < musicindex.Count; i++)
+                    {
+                    <tr>
+                    <td>@musicname[i].Data</td>
+                    <td>@artistname[i].Data</td>
+                    <td>@genrename[i].Data</td>
+                    <td>@formatname[i].Data</td>
+                    <audio controls><source src="music/@musicname[i].Data" /></audio>
+                    </tr>
+                    }
+                
+            
+        </tbody>
+    </table>
+    <div class="card-body">
+     
+            
+      
+    </div>
+}

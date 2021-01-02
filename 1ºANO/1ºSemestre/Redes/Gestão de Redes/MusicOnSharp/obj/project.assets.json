@@ -1,0 +1,204 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Howler.Blazor/0.9.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.JSInterop": "3.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Howler.Blazor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Howler.Blazor.dll": {}
+        },
+        "build": {
+          "buildTransitive/Howler.Blazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Howler.Blazor.props": {}
+        }
+      },
+      "Lextm.SharpSnmpLib/12.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/SharpSnmpLib.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SharpSnmpLib.dll": {}
+        }
+      },
+      "Microsoft.JSInterop/3.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.JSInterop.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.JSInterop.dll": {}
+        }
+      },
+      "TagLibSharp/2.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/TagLibSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/TagLibSharp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Howler.Blazor/0.9.3": {
+      "sha512": "rnrkTRTqOP5//NDS++VMseRlbPVoLr1MeVfoJeP1BmqA64OhvMOhtHfs0r6nvAd551TBcypL5XUMm3bVJECu0w==",
+      "type": "package",
+      "path": "howler.blazor/0.9.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Howler.Blazor.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Howler.Blazor.props",
+        "buildTransitive/Howler.Blazor.props",
+        "howler.blazor.0.9.3.nupkg.sha512",
+        "howler.blazor.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Howler.Blazor.dll",
+        "staticwebassets/JsInteropHowl.js"
+      ]
+    },
+    "Lextm.SharpSnmpLib/12.3.0": {
+      "sha512": "NhCpn8PsSTZWXnkodTOHcE4z2kmktYUgFKuGKgdzX500KMRLFkJvCWiDlxnYA/QT4PqVMfEbAXRB0zyL4xQMOQ==",
+      "type": "package",
+      "path": "lextm.sharpsnmplib/12.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lextm.sharpsnmplib.12.3.0.nupkg.sha512",
+        "lextm.sharpsnmplib.nuspec",
+        "lib/monoandroid80/SharpSnmpLib.dll",
+        "lib/monoandroid80/SharpSnmpLib.pdb",
+        "lib/net471/SharpSnmpLib.dll",
+        "lib/net471/SharpSnmpLib.pdb",
+        "lib/netstandard2.0/SharpSnmpLib.dll",
+        "lib/netstandard2.0/SharpSnmpLib.pdb",
+        "lib/xamarinios10/SharpSnmpLib.dll",
+        "lib/xamarinios10/SharpSnmpLib.pdb"
+      ]
+    },
+    "Microsoft.JSInterop/3.1.0": {
+      "sha512": "A6w985fb6RyL4x69TILW3sF2DcAufUPDOwN1LpdRZ3sZcpvb2ZnM2TrarleDhtqfS5g0Ot+2AG5AM9svH9Cm8Q==",
+      "type": "package",
+      "path": "microsoft.jsinterop/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.1/Microsoft.JSInterop.dll",
+        "lib/netcoreapp3.1/Microsoft.JSInterop.xml",
+        "lib/netstandard2.0/Microsoft.JSInterop.dll",
+        "lib/netstandard2.0/Microsoft.JSInterop.xml",
+        "microsoft.jsinterop.3.1.0.nupkg.sha512",
+        "microsoft.jsinterop.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "TagLibSharp/2.2.0": {
+      "sha512": "X8UOWeaJgHGrN3xilg3O0lqowhUSwNEiGrE8ITDd1rCn14LqGCWKgn5GX++SW4vuXBMne8+pyic6aUvOFQMRlA==",
+      "type": "package",
+      "path": "taglibsharp/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/TagLibSharp.dll",
+        "lib/net45/TagLibSharp.pdb",
+        "lib/net45/TaglibSharp.xml",
+        "lib/netstandard2.0/TagLibSharp.dll",
+        "lib/netstandard2.0/TagLibSharp.pdb",
+        "lib/netstandard2.0/TaglibSharp.xml",
+        "taglibsharp.2.2.0.nupkg.sha512",
+        "taglibsharp.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Howler.Blazor >= 0.9.3",
+      "Lextm.SharpSnmpLib >= 12.3.0",
+      "TagLibSharp >= 2.2.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/bruno/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/bruno/MusicOnSharp/MusicOnSharp.csproj",
+      "projectName": "MusicOnSharp",
+      "projectPath": "/home/bruno/MusicOnSharp/MusicOnSharp.csproj",
+      "packagesPath": "/home/bruno/.nuget/packages/",
+      "outputPath": "/home/bruno/MusicOnSharp/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/bruno/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "Howler.Blazor": {
+            "target": "Package",
+            "version": "[0.9.3, )"
+          },
+          "Lextm.SharpSnmpLib": {
+            "target": "Package",
+            "version": "[12.3.0, )"
+          },
+          "TagLibSharp": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
