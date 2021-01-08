@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/Howler.Blazor" Path="C:\Users\bruno\.nuget\packages\howler.blazor\0.9.3\build\..\staticwebassets\" />
+  <ContentRoot BasePath="/" Path="C:\Users\bruno\Documents\MusicOnSharpWin\obj\Debug\net5.0\scopedcss\bundle\" />
+</StaticWebAssets>
